@@ -1,3 +1,5 @@
+// --- FUNÇÕES PÁGINA - FILMES ---
+
 //Função para ordenar por A-Z/Z-A
 export function sortByOrderFilms(films, orderBy){
   const newArray = [...films]
@@ -18,11 +20,45 @@ export function sortByOrderFilms(films, orderBy){
   return newArray;
 }
 
-// Função filtrar por diretor
+// Função filtrar mais/menos avaliados
+export function sortByScore(films, selected){
+  const newArray = [...films]
+  
+  const sorted = newArray.sort(function(a, b) {
+    if(selected === 'highScore'){
+      return b.rt_score - a.rt_score;
+    }
+    return a.rt_score - b.rt_score;
+  })
+  return sorted;
+} 
+
+// Função filtrar por Diretor
 export const filters = (array, key, condition) =>
   array.filter((item) => item[key] === condition);
 
-// Função para filtro de Genero
+
+  // --- FUNÇÕES PÁGINA - PERSONAGENS ---
+
+// Função Ordenação
+export function sortByOrderCharacters(characters, pressed){
+  const newArray = [...characters];
+  if(pressed === "az") {
+    newArray.sort(function(a,b){
+      if(a.name < b.name){
+        return -1;
+      }
+    })
+  } else {
+    newArray.sort(function(a,b){
+      if(a.name > b.name){
+        return -1;
+      }
+    })
+  }
+  return newArray;
+}
+// Função para filtro de Gênero
 export const filterGender = (characters, gender) =>{
   return characters.filter((character) =>{
     return character.gender === gender
@@ -43,7 +79,7 @@ export const getCharacterByID = (characters, characterID) =>{
   })[0]
 }
 
-// Função personagens por filmes
+// Função personagens por Filmes
 export const filterFilm = (names, title) =>{
   return names.filter((name) => {
     return name.title === title

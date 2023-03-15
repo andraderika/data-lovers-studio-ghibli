@@ -1,4 +1,4 @@
-import {sortByOrderFilms, filters} from './data.js';
+import {sortByOrderFilms, filters, sortByScore} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 // --- FUNÇÕES GERAIS DAS PÁGINAS ---

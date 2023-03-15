@@ -1,5 +1,9 @@
-import {getCharacterByID, getCharacters, filterGender, filterFilm} from './data.js';
+import {getCharacterByID, getCharacters, sortByOrderCharacters, filterGender, filterFilm} from './data.js';
 import data from './data/ghibli/ghibli.js';
+
+const allCharacters = getCharacters(data.films);
+
+// --- FUNÇÕES GERAIS DAS PÁGINAS ---
 
 // Função para imprimir os cards na tela
 function sectionCharacters(characters){
@@ -11,7 +15,7 @@ function sectionCharacters(characters){
     </div>`
   ).join("")
 }
-sectionCharacters(getCharacters(data.films))
+sectionCharacters(allCharacters)
 
 
 // Função para janela modal
@@ -24,7 +28,7 @@ function modalPersona(modalID, personagemID){
     }
   })
   
-  const personagens = getCharacters(data.films) 
+  const personagens = allCharacters 
   const personagem = getCharacterByID(personagens, personagemID)
   const modalContent = modal.querySelector('.modal-content')
 
@@ -42,18 +46,25 @@ image.addEventListener('click', function(e) {
   modalPersona('modalChar', e.target.dataset.id);
 })
 
+// --- FUNÇÕES ORDENAÇÃO/FILTROS ---
 
+// Ordenação
+const orderBy = document.getElementById('orderBy')
+orderBy.addEventListener ('change', () => {
+  const pressed = (orderBy).value;
+  const sortedOrder = sortByOrderCharacters(allCharacters, pressed)
+  sectionCharacters(sortedOrder)
+})
 // Filtro Genero 
 const genderOption = document.getElementById('genderOption')
 
 genderOption.addEventListener ('change', () =>{
   const gender = (genderOption).value;
-  const characters = getCharacters(data.films)
-  const filtro = filterGender(characters, gender)
+  const filtro = filterGender(allCharacters, gender)
   sectionCharacters(filtro)  
 })
 
-// Filtro por filme
+// Filtro por Filme
 const movies = document.getElementById('movies')
 
 movies.addEventListener ('change', () =>{
