@@ -68,10 +68,14 @@ assessmentOption.addEventListener ('change', () => {
 })
 
 // Função para filtrar por diretor
+const stats = document.querySelector('.stats')
 director.addEventListener('change', (event) => {
   const selectedDirector = event.target.value
   const filtered = filters(films, 'director', selectedDirector)
   sectionMovies(filtered)
+
+  const message = `The great Sr. ${selectedDirector} has directed ${filtered.length} film(s) in Studio Ghibli's history`
+  stats.innerHTML= message
 })
 
 
