@@ -44,18 +44,16 @@ image.addEventListener('click', function(e) {
   modalPersona('modalChar', e.target.dataset.id);
 })
 
-// --- FUNÇÕES DE ORDENAÇÃO/FILTROS --- 
+// --- FUNÇÕES ORDENAÇÃO/FILTROS ---
 
 // Ordenação
 const orderBy = document.getElementById('orderBy')
-
 orderBy.addEventListener ('change', () => {
   const pressed = (orderBy).value;
   const sortedOrder = sortByOrderCharacters(allCharacters, pressed)
   sectionCharacters(sortedOrder)
 })
-
-// Filtro Gênero 
+// Filtro Genero 
 const genderOption = document.getElementById('genderOption')
 
 genderOption.addEventListener ('change', () =>{
@@ -64,7 +62,7 @@ genderOption.addEventListener ('change', () =>{
   sectionCharacters(filtro)  
 })
 
-// Filtro  personagem por Filme
+// Filtro por Filme
 const movies = document.getElementById('movies')
 
 movies.addEventListener ('change', () =>{

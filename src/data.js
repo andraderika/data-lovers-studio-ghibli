@@ -1,4 +1,4 @@
-// --- FILTROS PÁGINA - FILMES ----
+// --- FUNÇÕES PÁGINA - FILMES ---
 
 //Função para ordenar por A-Z/Z-A
 export function sortByOrderFilms(films, orderBy){
@@ -19,6 +19,19 @@ export function sortByOrderFilms(films, orderBy){
   }
   return newArray;
 }
+
+// Função filtrar mais/menos avaliados
+export function sortByScore(films, selected){
+  const newArray = [...films]
+  
+  const sorted = newArray.sort(function(a, b) {
+    if(selected === 'highScore'){
+      return b.rt_score - a.rt_score;
+    }
+    return a.rt_score - b.rt_score;
+  })
+  return sorted;
+} 
 
 // Função filtrar por Diretor
 export const filters = (array, key, condition) =>
