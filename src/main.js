@@ -1,6 +1,8 @@
 import {sortByOrderFilms, filters} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
+// --- FUNÇÕES GERAIS DAS PÁGINAS ---
+
 // Função dos cards na tela
 function sectionMovies(movies){
   document.getElementById('infoMovies').innerHTML = movies.map((movie) => `
@@ -27,7 +29,6 @@ function modalFilmes(modalID, filmeID){
   })
     
   const movies = filmes[0]
-
   const modalContent = modal.querySelector('.modal-content')
 
   modalContent.innerHTML = `
@@ -44,8 +45,9 @@ image.addEventListener('click', function(e) {
   modalFilmes('modalChar', e.target.dataset.id);
 })
 
-// Ordenação e Filtros
+// --- FUNÇÕES ORDENAÇÃO/FILTROS ---
 
+// Ordenação e Filtros
 const films = data.films
 const orderBy = document.getElementById('orderBy')
 const assessmentOption = document.getElementById('assessmentOption')
@@ -58,12 +60,18 @@ orderBy.addEventListener ('change', () => {
   sectionMovies(sortedOrder)
 })
 
+// Função filtrar mais/menos avaliados
+assessmentOption.addEventListener ('change', () => {
+  const selected = (assessmentOption).value;
+  const sorted = sortByScore(films, selected)
+  sectionMovies(sorted) 
+})
+
 // Função para filtrar por diretor
 director.addEventListener('change', (event) => {
   const selectedDirector = event.target.value
   const filtered = filters(films, 'director', selectedDirector)
   sectionMovies(filtered)
 })
-
 
 
