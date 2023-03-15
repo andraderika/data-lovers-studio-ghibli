@@ -63,5 +63,3 @@ export const filterFilm = (names, title) =>{
     return name.title === title
   })[0]
 }
-
-
