@@ -38,7 +38,7 @@ export const filters = (array, key, condition) =>
   array.filter((item) => item[key] === condition);
 
 
-// --- FILTROS PÁGINA - PERSONAGENS ---
+// --- FUNÇÕES PÁGINA - PERSONAGENS ---
 
 // Ordenação Personagens 
 export function sortByOrderCharacters(characters, pressed){
