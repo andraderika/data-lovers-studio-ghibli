@@ -1,9 +1,9 @@
 import {getCharacterByID, getCharacters, sortByOrderCharacters, filterGender, filterFilm} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
-const allCharacters = getCharacters(data.films);
+// --- FUNÇÕES GERAIS DA TELA ---
 
-// --- FUNÇÕES GERAIS DAS PÁGINAS ---
+const allCharacters = getCharacters(data.films)
 
 // Função para imprimir os cards na tela
 function sectionCharacters(characters){
@@ -17,7 +17,6 @@ function sectionCharacters(characters){
 }
 sectionCharacters(allCharacters)
 
-
 // Função para janela modal
 function modalPersona(modalID, personagemID){
   const modal = document.getElementById(modalID);
@@ -28,8 +27,7 @@ function modalPersona(modalID, personagemID){
     }
   })
   
-  const personagens = allCharacters 
-  const personagem = getCharacterByID(personagens, personagemID)
+  const personagem = getCharacterByID(allCharacters, personagemID)
   const modalContent = modal.querySelector('.modal-content')
 
   modalContent.innerHTML = `

@@ -38,11 +38,12 @@ export const filters = (array, key, condition) =>
   array.filter((item) => item[key] === condition);
 
 
-  // --- FUNÇÕES PÁGINA - PERSONAGENS ---
+// --- FILTROS PÁGINA - PERSONAGENS ---
 
-// Função Ordenação
+// Ordenação Personagens 
 export function sortByOrderCharacters(characters, pressed){
   const newArray = [...characters];
+
   if(pressed === "az") {
     newArray.sort(function(a,b){
       if(a.name < b.name){
@@ -58,6 +59,7 @@ export function sortByOrderCharacters(characters, pressed){
   }
   return newArray;
 }
+
 // Função para filtro de Gênero
 export const filterGender = (characters, gender) =>{
   return characters.filter((character) =>{
