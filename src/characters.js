@@ -28,7 +28,7 @@ function modalPersona(modalID, personagemID){
   })
   
   const personagem = getCharacterByID(allCharacters, personagemID)
-  const modalContent = modal.querySelector('.modal-content')
+  const modalContent = modal.querySelector('.modal-text')
 
   modalContent.innerHTML = `
     <h1>${personagem.name}</h1>

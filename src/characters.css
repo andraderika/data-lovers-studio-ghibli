@@ -113,7 +113,7 @@ a:hover {
  }
 
  .cardFront{
-  width: 20%;
+  width: 200px;
   background: white;
   border-radius: 30px;
   box-shadow: 0 0 11px 5px #0000005c;
@@ -137,7 +137,7 @@ p.name {
 }
 
 .modalContainer {
-  width: 90vw;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -191,13 +191,13 @@ p {
 
 .closeModal {
   position: absolute;
-  top: 5px;
-  right: 250px;
+  top: 0;
+  right: 0;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  background: #fff;
+  border-bottom-left-radius: 10px;
+  background-color: #fff;
+  border: none;
   color: #000;
   cursor: pointer;
 }
@@ -222,19 +222,54 @@ p {
   right:20px;
   }
 
-.footerHome img {
-  display: flex;
-  width: 50px;
-}
+  footer{
+    background-color: #d01c1c99;
+    text-align: center;
+  }
 
 .lineDev {
-  margin: 50px 0;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .pairCreators {
-  display: flex;
-  justify-content: center;
+  margin-top: 20px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.pairCreators  a {
+  margin-bottom: 20px;
+}
+
+/*--- responsividade ---*/
+
+@media screen and (max-width: 800px) {
+  #logo img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  .indexIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
 }
