@@ -29,7 +29,7 @@ function modalFilmes(modalID, filmeID){
   })
     
   const movies = filmes[0]
-  const modalContent = modal.querySelector('.modal-content')
+  const modalContent = modal.querySelector('.modal-text')
 
   modalContent.innerHTML = `
     <h1>${movies.title}</h1><br>
