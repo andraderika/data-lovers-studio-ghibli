@@ -54,6 +54,22 @@ a:hover {
   justify-content: center;  
 }
 
+#orderBy{
+  width: 10rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+  box-shadow: 0 5px 5px #a6a4a4;
+ }
+
 #genderOption{
   width: 12rem;
   height: 3rem;
@@ -72,22 +88,6 @@ a:hover {
 
 #movies{
  width: 12rem;
- height: 3rem;
- background: #fff;
- border-radius: 30px;
- font-size: 1.3rem;
- font-weight: bold;
- text-align: center;
- letter-spacing: 2px;
- cursor: pointer;
- border-width: 0px;
- border-style: none;
- border-color: transparent;
- box-shadow: 0 5px 5px #a6a4a4;
-}
-
-#orderBy{
- width: 10rem;
  height: 3rem;
  background: #fff;
  border-radius: 30px;
@@ -271,5 +271,4 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
   }
-
 }

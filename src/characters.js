@@ -1,5 +1,5 @@
-import {getCharacterByID, getCharacters, sortByOrderCharacters, filterGender, filterFilm} from './data.js';
-import data from './data/ghibli/ghibli.js';
+import {getCharacterByID, getCharacters, sortByOrderCharacters, filterGender, filterFilm} from '../data.js';
+import data from '../data/ghibli/ghibli.js';
 
 // --- FUNÇÕES GERAIS DA TELA ---
 
@@ -53,6 +53,7 @@ orderBy.addEventListener ('change', () => {
   const sortedOrder = sortByOrderCharacters(allCharacters, pressed)
   sectionCharacters(sortedOrder)
 })
+
 // Filtro Genero 
 const genderOption = document.getElementById('genderOption')
 

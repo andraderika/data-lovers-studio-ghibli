@@ -54,22 +54,22 @@ a:hover {
   justify-content: center;  
 }
 
- #director{
-   width: 12rem;
-   height: 3rem;
-   background: #fff;
-   border-radius: 30px;
-   font-size: 1.3rem;
-   font-weight: bold;
-   text-align: center;
-   letter-spacing: 2px;
-   cursor: pointer;
-   border-width: 0px;
-   border-style: none;
-   border-color: transparent;
-   box-shadow: 0 5px 5px #a6a4a4;
+#orderBy{
+  width: 12rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+  box-shadow: 0 5px 5px #a6a4a4;
  }
- 
+
  #assessmentOption{
   width: 12rem;
   height: 3rem;
@@ -85,21 +85,21 @@ a:hover {
   border-color: transparent;
   box-shadow: 0 5px 5px #a6a4a4;
  }
- 
- #orderBy{
-  width: 12rem;
-  height: 3rem;
-  background: #fff;
-  border-radius: 30px;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 2px;
-  cursor: pointer;
-  border-width: 0px;
-  border-style: none;
-  border-color: transparent;
-  box-shadow: 0 5px 5px #a6a4a4;
+
+ #director{
+   width: 12rem;
+   height: 3rem;
+   background: #fff;
+   border-radius: 30px;
+   font-size: 1.3rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 2px;
+   cursor: pointer;
+   border-width: 0px;
+   border-style: none;
+   border-color: transparent;
+   box-shadow: 0 5px 5px #a6a4a4;
  }
 
  #infoMovies {
@@ -114,10 +114,8 @@ a:hover {
 
  .stats {
   font-family: "Inter", sans-serif;
-  /*height: 50px;*/
   margin: 50px;
   color: #000;
-  /*padding: 1% 0 0 2%;*/
   text-align: center;
  }
 

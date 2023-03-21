@@ -1,5 +1,5 @@
-import {sortByOrderFilms, filters, sortByScore} from './data.js';
-import data from './data/ghibli/ghibli.js';
+import {sortByOrderFilms, filters, sortByScore} from '../data.js';
+import data from '../data/ghibli/ghibli.js';
 
 // --- FUNÇÕES GERAIS DAS PÁGINAS ---
 
@@ -71,10 +71,10 @@ assessmentOption.addEventListener ('change', () => {
 const stats = document.querySelector('.stats')
 director.addEventListener('change', (event) => {
   const selectedDirector = event.target.value
-  const filtered = filters(films, 'director', selectedDirector)
+  const filtered = filters(films,'director', selectedDirector)
   sectionMovies(filtered)
 
-  const message = `The great Sr. ${selectedDirector} has directed ${filtered.length} film(s) in Studio Ghibli's history`
+  const message = `O diretor ${selectedDirector} dirigiu ${filtered.length} filme (s) do Studio Ghibli`
   stats.innerHTML= message
 })
 
