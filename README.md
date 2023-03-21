@@ -1,12 +1,8 @@
-// Pra colocar bolinha de tópico: *
-Pra colocar link externo [palavra](link)
-Pra colocar link do próprio README  (#palavra)
-Pra descatar a palavra dentro de uma caixa `palavra`
-Pra palavra en itálico _palavra_
-
-
-
 # Data Lovers - Studio Ghibli
+
+***
+
+Acesse o projeto [aqui]
 
 ## Índice
 
@@ -76,23 +72,17 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
 
 #### Protótipo de baixa fidelidade
 
-Colocar prints de baixa fidelidade
+![Home - Baixa](https://user-images.githubusercontent.com/122548068/226699382-ed8acc97-eb34-4ad1-82dc-d2181cc63fbf.png)
 
-<img src="" alt=";"/>
+![Filmes - Baixa](https://user-images.githubusercontent.com/122548068/226699412-deecfee4-cd2f-40c0-bafc-6ba6fa248bb7.png)
 
-<img src="" alt=";"/>
+![Personagens - Baixa](https://user-images.githubusercontent.com/122548068/226699450-91ef3e60-e251-4664-ab11-58b88aecc148.png)
 
-<img src="" alt=";"/> 
 
 #### Protótipo de alta fidelidade
 
-Colocar prints de alta fidelidade
+![Protótipo - Studio Ghibli](https://user-images.githubusercontent.com/122548068/226698350-63a40955-72fa-40b8-af5d-680b17e69493.png)
 
-<img src="" alt=";"/>
-
-<img src="" alt=";"/>
-
-<img src="" alt=";"/>
 
 #### Testes de usabilidade
 
@@ -109,8 +99,34 @@ A partir das devolutivas, nos ajustamos o projeto:
 
 ## 3. Interface da página
 
-Colocar prints das páginas prontas
+* Mobile 
+
+![Mobile - Home](https://user-images.githubusercontent.com/122548068/226700465-46c82cb0-f8d9-4a7f-8d8f-7ba74a9384a7.png)
+
+![Mobile - Home 2](https://user-images.githubusercontent.com/122548068/226700413-48a9335b-da5f-4a45-93d5-10630f8dcb74.png)
+
+![Mobile - Movies](https://user-images.githubusercontent.com/122548068/226700663-932a0151-be9e-403f-8fa8-01a0695f9c9e.png)
+
+![Mobile - Modal](https://user-images.githubusercontent.com/122548068/226700693-de5f333e-b709-4c27-821d-531762780ed7.png)
+
+![Mobile - Personagens](https://user-images.githubusercontent.com/122548068/226700579-4d9dad72-5fa7-492a-ac90-0f6388ab4e62.png)
+
+![Mobile - ModalPersonagens](https://user-images.githubusercontent.com/122548068/226700625-eea52c24-7941-4338-ab3f-be69bdec84fa.png)
+
+* Telas à partir de 820px (Tablets/Desktop)
+
+![Ipad - Home](https://user-images.githubusercontent.com/122548068/226701362-00b4bbd9-9f91-4970-a6d7-a66c409dcaca.png)
+
+![Ipad - Home 2](https://user-images.githubusercontent.com/122548068/226701389-ead48117-7a2c-4649-a7c0-4d0c19e3f3fb.png)
+
+![Ipad - Movies 2](https://user-images.githubusercontent.com/122548068/226701433-5d589fad-4d79-4dc3-8522-bc7e4c849e5d.png)
+
+![Ipad - Modal](https://user-images.githubusercontent.com/122548068/226701445-ca4d1c85-9fc6-4b93-ac90-b79a4c658f6f.png)
+
+![Ipad - Personagens](https://user-images.githubusercontent.com/122548068/226701463-d5362e23-11aa-4f3a-b1fe-36a280f37062.png)
+
+![Ipad - ModalPersonagens](https://user-images.githubusercontent.com/122548068/226701483-9c60bddb-b118-422e-8467-e5ce9c4c528b.png)
 
 ## Desenvolvido por:
 
-Erika Oliveira e Izadora Nascimento. 
+Erika Oliveira | [Linkedin](https://www.linkedin.com/in/erikaoli/) <br>  Izadora Nascimento | [Linkedin](https://www.linkedin.com/in/izadora-santos-1758a318b/)
