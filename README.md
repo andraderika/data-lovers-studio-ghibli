@@ -99,11 +99,6 @@ A partir das devolutivas, nos ajustamos o projeto:
 
 Colocar prints das páginas prontas
 
-### Testes unitários
-
-Printar imagem dos testes
-
-
 ### Desenvolvido por:
 
 Erika Oliveira e Izadora Nascimento. 
