@@ -76,11 +76,23 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
 
 #### Protótipo de baixa fidelidade
 
-Colocar prints de baixa fidelidade 
+Colocar prints de baixa fidelidade
+
+<img src="" alt=";"/>
+
+<img src="" alt=";"/>
+
+<img src="" alt=";"/> 
 
 #### Protótipo de alta fidelidade
 
 Colocar prints de alta fidelidade
+
+<img src="" alt=";"/>
+
+<img src="" alt=";"/>
+
+<img src="" alt=";"/>
 
 #### Testes de usabilidade
 
@@ -99,6 +111,6 @@ A partir das devolutivas, nos ajustamos o projeto:
 
 Colocar prints das páginas prontas
 
-### Desenvolvido por:
+## Desenvolvido por:
 
 Erika Oliveira e Izadora Nascimento. 
