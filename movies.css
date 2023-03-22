@@ -1,0 +1,273 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #9ed9ff;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3px;
+}
+
+#logo img {
+  margin: 15px 0 0 15px;
+  width: 250px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block; 
+  margin-right: 10px; 
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #d01c1c; /* Define a cor do texto quando o cursor passa por cima */
+}
+
+.indexIcons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.filters{
+  min-width: 300px;
+  max-width: 1200px;
+  margin: 3rem auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;  
+}
+
+#orderBy{
+  width: 12rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+  box-shadow: 0 5px 5px #a6a4a4;
+ }
+
+ #assessmentOption{
+  width: 12rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+  box-shadow: 0 5px 5px #a6a4a4;
+ }
+
+ #director{
+   width: 12rem;
+   height: 3rem;
+   background: #fff;
+   border-radius: 30px;
+   font-size: 1.3rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 2px;
+   cursor: pointer;
+   border-width: 0px;
+   border-style: none;
+   border-color: transparent;
+   box-shadow: 0 5px 5px #a6a4a4;
+ }
+
+ #infoMovies {
+  display: flex;
+    max-width: 1024px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px;
+ }
+
+ .stats {
+  font-family: "Inter", sans-serif;
+  margin: 50px;
+  color: #000;
+  text-align: center;
+ }
+
+ .cardFront{
+  width: 200px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0 11px 5px #0000005c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.imgFront {
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.modalContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer.showModal{
+  display: flex;
+}
+
+.modal-content {
+  background: #9ed9ff;
+  width: 60%;
+  height: 90%;
+  overflow: scroll;
+  min-width: 300px;
+  padding: 40px;
+  border: 10px solid #9ed9ff;
+  position: relative;
+  border-radius: 20px;
+  border-color: #fff;
+}
+
+.showModal .modal {
+  animation: modal .3s;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-bottom-left-radius: 10px;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  box-shadow: 0 5px 5px #222;
+  }
+  
+  .btnTopo {
+  background-color: #d01c1c;
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+  }
+
+  footer{
+    background-color: #d01c1c99;
+    text-align: center;
+  }
+
+.lineDev {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pairCreators {
+  margin-top: 20px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.pairCreators  a {
+  margin-bottom: 20px;
+}
+
+/*--- responsividade ---*/
+
+@media screen and (max-width: 800px) {
+  #logo img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  .indexIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+}
+

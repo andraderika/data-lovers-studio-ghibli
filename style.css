@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fee397;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3px;
+}
+
+#logo img {
+  margin: 15px 0 0 15px;
+  max-width: 250px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block; 
+  margin-right: 10px; 
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #d01c1c; /* Define a cor do texto quando o cursor passa por cima */
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.posterGhibli {
+  display: flex;
+  justify-content: center;
+}
+
+.posterGhibli img {
+  max-width: 500px;
+  min-width: 200px
+}
+
+.textHome {
+  font-size: 20px;
+  margin: 10px 40px;
+  text-align: justify;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  box-shadow: 0 5px 5px #222;
+  }
+  
+  .btnTopo {
+  background-color: #d01c1c;
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+  }
+
+  footer{
+    background-color: #d01c1c99;
+    text-align: center;
+  }
+
+.lineDev {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pairCreators {
+  margin-top: 20px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.pairCreators  a {
+  margin-bottom: 20px;
+}
+
+/*--- responsividade ---*/
+@media screen and (max-width: 800px) {
+  #logo img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  #menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
