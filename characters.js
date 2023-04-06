@@ -1,5 +1,5 @@
-import {getCharacterByID, getCharacters, sortByOrderCharacters, filterGender, filterFilm} from '../data.js';
-import data from '../data/ghibli/ghibli.js';
+import {getCharacterByID, getCharacters, sortByOrderCharacters, filterGender, filterFilm} from './data.js';
+import data from './data/ghibli/ghibli.js';
 
 // --- FUNÇÕES GERAIS DA TELA ---
 
