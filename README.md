@@ -2,7 +2,22 @@
 
 ***
 
-Acesse o projeto [aqui]
+<div align="center">
+  
+ <br>
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 30px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" style="height: 30px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="height: 30px;"/>
+  
+  <br>
+  
+
+  acesse ao projeto [aqui](https://andraderika.github.io/data-lovers-studio-ghibli/index.html) 
+  
+
+</div>
+
 
 ## Índice
 
