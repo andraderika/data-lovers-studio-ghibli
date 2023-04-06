@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="movies.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie</title>
-  </head>
-  <body>
-    <span id="topo"></span> <!--ancora interna do btnTopo -->
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"><img src="img/Studio_Ghibli_logo.png" alt="Logo Studio Ghibli" /></a>
-        </div>
-        <div class="indexIcons">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="movies.html">Filmes</a></li>
-            <li><a href="characters.html">Personagens</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section class="filters">
-      <div>
-        <select id="orderBy">
-          <option disabled selected hidden>Ordenar</option>
-          <option value="az" id="az">A-Z</option>
-          <option value="za" id="za">Z-A</option>
-        </select>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="movies.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie</title>
+</head>
+<body>
+  <span id="topo"></span> <!--ancora interna do btnTopo -->
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html"><img src="img/Studio_Ghibli_logo.png" alt="Logo Studio Ghibli" /></a>
       </div>
-      <div>
-        <select id="assessmentOption">
-          <option disabled selected hidden>Avaliação</option>
-          <option value="highScore" id="highScore">Mais avaliados</option>
-          <option value="lowScore" id="lowScore">Menos avaliados</option>
-        </select>
+      <div class="indexIcons">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Filmes</a></li>
+          <li><a href="characters.html">Personagens</a></li>
+        </ul>
       </div>
-      <div>
-        <select id="director">
-          <option disabled selected hidden>Diretor</option>
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-        </select>
-      </div>
-    </section>
-    <p class="stats">Bem Vindo a página de filmes!</p>
-    <main>
-      <div id="infoMovies"></div>
-      <div> 
-        <a class="btn btnTopo" href="#topo">↑</a>
-      </div>
-    </main>
-    <div id="modalChar" class="modalContainer">          
-      <div class="modal-content">
-        <button class="closeModal">X</button>
-        <div class="modal-text"></div>
-      </div>
+    </nav>
+  </header>
+  <section class="filters">
+    <div>
+      <select id="orderBy">
+        <option disabled selected hidden>Ordenar</option>
+        <option value="az" id="az">A-Z</option>
+        <option value="za" id="za">Z-A</option>
+      </select>
     </div>
-    <footer class="footerHome">
-      <div class="lineDev">
-        <p>Desenvolvido por</p>
+    <div>
+      <select id="assessmentOption">
+        <option disabled selected hidden>Avaliação</option>
+        <option value="highScore" id="highScore">Mais avaliados</option>
+        <option value="lowScore" id="lowScore">Menos avaliados</option>
+      </select>
+    </div>
+    <div>
+      <select id="director">
+        <option disabled selected hidden>Diretor</option>
+        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+        <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+        <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+      </select>
+    </div>
+  </section>
+  <p class="stats">Bem Vindo a página de filmes!</p>
+      <main>
+          <div id="infoMovies"></div>
+          <div>
+            <a class="btn btnTopo" href="#topo">↑</a>
+          </div>
+      </main>
+      <div id="modalChar" class="modalContainer">          
+          <div class="modal-content">
+            <button class="closeModal">X</button>
+            <div class="modal-text"></div>
+          </div>
       </div>
-      <div class="pairCreators">
-        <a href="https://github.com/andraderika">Erika Oliveira</a>
-        <a href="https://github.com/IzadoraNascimento">Izadora Nascimento 2023</a>          
-      </div>
-    </footer>
-    <script src="./movies.js" type="module"></script>
-  </body>
+        <footer class="footerHome">
+          <div class="lineDev">
+            <p>Desenvolvido por</p>
+          </div>
+          <div class="pairCreators">
+            <a href="https://github.com/andraderika">Erika Oliveira</a>
+            <a href="https://github.com/IzadoraNascimento"> Izadora Nascimento 2023</a>          
+          </div>
+        </footer>
+  <script src="main.js" type="module"></script>
+</body>
 </html>

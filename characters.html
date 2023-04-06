@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="characters.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Characters</title>
-  </head>
-  <body>
-    <span id="topo"></span> <!--ancora interna do btnTopo -->
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"><img src="img/Studio_Ghibli_logo.png" alt="Logo Studio Ghibli" /></a>
-        </div>
-        <div class="indexIcons">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="movies.html">Filmes</a></li>
-            <li><a href="characters.html">Personagens</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section class="filters">
-      <div>
-        <select class="" id="orderBy">
-          <option disabled selected hidden>Ordenar</option>
-          <option value="az" id="az">A-Z</option>
-          <option value="za" id="za">Z-A</option>
-        </select>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="characters.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Characters</title>
+</head>
+<body>
+  <span id="topo"></span> <!--ancora interna do btnTopo -->
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html"><img src="img/Studio_Ghibli_logo.png" alt="Logo Studio Ghibli" /></a>
       </div>
-      <div>
-        <select class="" id="genderOption">
-          <option disabled selected hidden>Gênero</option>
-          <option value="Female">Feminino</option>
-          <option value="Male">Masculino</option>
-          <option value="NA">Indefinido</option>
-        </select>
+      <div class="indexIcons">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Filmes</a></li>
+          <li><a href="characters.html">Personagens</a></li>
+        </ul>
       </div>
-      <div>
-        <select class="" id="movies">
-          <option disabled selected hidden>Filmes</option>
-          <option value="Grave of the Fireflies">Túmulo dos Vagalumes</option>
-          <option value="My Neighbor Totoro">Meu Amigo Totoro</option>
-          <option value="Castle in the Sky">O Castelo no Céu</option>
-          <option value="Kiki's Delivery Service">O Serviço de Entregas da Kiki</option>
-          <option value="Only Yesterday">Memórias de Ontem</option>
-          <option value="Porco Rosso">Porco Rosso: O Último Herói Romântico</option>
-          <option value="Pom Poko">PomPoko: A Grande Batalha dos Guaxinins</option>
-          <option value="Whisper of the Heart">Sussurros do Coração</option>
-          <option value="Princess Mononoke">Princesa Mononoke</option>
-          <option value="My Neighbors the Yamadas">Meus Vizinhos os Yamadas</option>
-          <option value="Spirited Away">A Viagem de Chihiro</option>
-          <option value="The Cat Returns">O Reino dos Gatos</option>
-          <option value="Howl's Moving Castle">O Castelo Animado</option>
-          <option value="Tales from Earthsea">Contos de Terramar</option>
-          <option value="Ponyo on the Cliff by the Sea">Ponyo: Uma Amizade Que Veio do Mar</option>
-          <option value="The Secret World of Arrietty">O Mundo dos Pequeninos</option>
-          <option value="From Up on Poppy Hill">Da Colina Kokuriko</option>
-          <option value="The Wind Rises">Vidas ao Vento</option>
-          <option value="The Tale of the Princess Kaguya">O Conto da Princesa Kaguya</option>
-          <option value="When Marnie Was There">As Memórias de Marnie</option>
-        </select>
-      </div>
-    </section>
-    <main>
+    </nav>
+  </header>
+  <section class="filters">
+    <div>
+      <select class="" id="orderBy">
+        <option disabled selected hidden>Ordenar</option>
+        <option value="az" id="az">A-Z</option>
+        <option value="za" id="za">Z-A</option>
+      </select>
+    </div>
+    <div>
+      <select class="" id="genderOption">
+        <option disabled selected hidden>Gênero</option>
+        <option value="Female">Feminino</option>
+        <option value="Male">Masculino</option>
+        <option value="NA">Indefinido</option>
+      </select>
+    </div>
+    <div>
+      <select class="" id="movies">
+        <option disabled selected hidden>Filmes</option>
+        <option value="Grave of the Fireflies">Túmulo dos Vagalumes</option>
+        <option value="My Neighbor Totoro">Meu Amigo Totoro</option>
+        <option value="Castle in the Sky">O Castelo no Céu</option>
+        <option value="Kiki's Delivery Service">O Serviço de Entregas da Kiki</option>
+        <option value="Only Yesterday">Memórias de Ontem</option>
+        <option value="Porco Rosso">Porco Rosso: O Último Herói Romântico</option>
+        <option value="Pom Poko">PomPoko: A Grande Batalha dos Guaxinins</option>
+        <option value="Whisper of the Heart">Sussurros do Coração</option>
+        <option value="Princess Mononoke">Princesa Mononoke</option>
+        <option value="My Neighbors the Yamadas">Meus Vizinhos os Yamadas</option>
+        <option value="Spirited Away">A Viagem de Chihiro</option>
+        <option value="The Cat Returns">O Reino dos Gatos</option>
+        <option value="Howl's Moving Castle">O Castelo Animado</option>
+        <option value="Tales from Earthsea">Contos de Terramar</option>
+        <option value="Ponyo on the Cliff by the Sea">Ponyo: Uma Amizade Que Veio do Mar</option>
+        <option value="The Secret World of Arrietty">O Mundo dos Pequeninos</option>
+        <option value="From Up on Poppy Hill">Da Colina Kokuriko</option>
+        <option value="The Wind Rises">Vidas ao Vento</option>
+        <option value="The Tale of the Princess Kaguya">O Conto da Princesa Kaguya</option>
+        <option value="When Marnie Was There">As Memórias de Marnie</option>
+      </select>
+    </div>
+  </section>
+  <main>
       <div id="infoCharacters"></div>
       <div>
         <a class="btn btnTopo" href="#topo">↑</a>
       </div>
-    </main>
-    <div id="modalChar" class="modalContainer">
+  </main>
+  <div id="modalChar" class="modalContainer">
       <div class="modal-content">
         <button class="closeModal">X</button>
         <div class="modal-text"></div>
       </div>
+  </div>
+  <footer class="footerHome">
+    <div class="lineDev">
+      <p>Desenvolvido por:</p>
     </div>
-    <footer class="footerHome">
-      <div class="lineDev">
-        <p>Desenvolvido por:</p>
-      </div>
-      <div class="pairCreators">
-        <a href="https://github.com/andraderika">Erika Oliveira</a>
-        <a href="https://github.com/IzadoraNascimento"> Izadora Nascimento 2023</a> 
-      </div>
-    </footer>
-    <script src="./characters.js" type="module"></script>
-  </body>
+    <div class="pairCreators">
+      <a href="https://github.com/andraderika">Erika Oliveira</a>
+      <a href="https://github.com/IzadoraNascimento"> Izadora Nascimento 2023</a> 
+    </div>
+  </footer>
+  <script src="characters.js" type="module"></script>
+</body>
 </html>
