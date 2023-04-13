@@ -13,7 +13,7 @@
   <br>
   
 
-  acesse ao projeto [aqui](https://andraderika.github.io/data-lovers-studio-ghibli/index.html) 
+  Acesse ao projeto [aqui](https://andraderika.github.io/data-lovers-studio-ghibli/index.html) 
   
 
 </div>
